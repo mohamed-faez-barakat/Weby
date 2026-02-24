@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
+    <style>
+        .hint {
+            display: none; /* Hide hints by default */
+            color: gray;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="codesstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+   
+    <!--------------------HEADER SEC------------------------>
+<header>
+    <h1><a href="index.html"  id="weby-logo">Weby</a></h1>
+      <nav>
+      <ul>
+          <li><a href="html.html"><i class="fa-brands fa-html5"></i></a></li>
+          <li><a href="css.html"><i class="fa-brands fa-css3-alt"></i></a></li>
+          <li><a href="JS.html"><i class="fa-brands fa-js"></i></a></li>
+          <li><a href="bootstrap.html"><i class="fa-brands fa-bootstrap"></i></a></li>
+          <li class="nav-item"><a href="form.html"><i class="fa-regular fa-clipboard"></i></a></li>
+        </ul>
+    </nav>
+    
+    <a href="contact.html"><button name="contact us" value="contact us">contact us</button></a>
+    
+    </header>
+    
+    
+    
+    <!------------INTRO SEC ------------------------------------->
+    
+    <!------------INTRO SEC ------------------------------------->
+    <h1 style=" text-align: center;
+font-size:700%;
+font-family: 'Trebuchet MS', sans-serif;
+color:rgba(255, 255, 255, 0.653);
+font-weight: bolder;
+margin-top: 15%;"><i class="fa-brands fa-js"></i></h1>
+    <h1 id="code-getting-started">Getting started with JavaScript</h1>
+    <h2 id="code-main-title">Introduction to JavaScript</h2>
+    <section id="intro-to-lang" style="margin-left: 1%;">
+    
+    <div style="line-height: 32px;">
+        &bull; &nbsp;<b>What is JavaScript?</b> JavaScript is a programming 
+        language that helps make
+         websites interactive. While HTML builds the structure of a webpage
+          and CSS styles it, JavaScript adds actions and behaviors. For example,
+           it can make things move on the screen, respond when you click a button, 
+           or show new content without reloading the page. JavaScript is 
+           important because it helps bring web pages to life, making them more
+            fun and useful for users.
+    </div>
+    </section>
+
+    <!-------------------------------------------------------------------------------------->
+    <h2 id="code-main-title">Why is JavaScript Important?</h2>
+    <section id="lang-why-is-imp">
+       
+        <ul style="line-height: 35px;">
+        <li><b>Interactivity:</b> JavaScript allows websites to respond to user actions, like clicking buttons or submitting forms.</li>
+        <li><b>Dynamic Content:</b> With JavaScript, web pages can update content without needing to reload the entire page, creating smoother experiences.</li>
+        <li><b>Widely Used:</b> JavaScript is essential in web development, making it a key skill for building modern, interactive websites.</li>
+        <li><b>Versatility:</b> JavaScript can be used for everything from simple website features to complex web applications, making it one of the most versatile programming languages.</li>    
+    </ul>
+ <h2 id="code-main-title" style="margin-left: 2%; margin-top: 8%;"> Why you should learn JavaScript</h2>
+	  <video height="100%" width = "70%" style="margin-left: 12.5%; border-radius: 2%; border: none;" controls>
+	  <source src="why should you learn java script.mp4" type="video/mp4">
+   <p> Browser does not support videos</p>
+   </video>
+	
+        </section>
+
+<!-------------------------------------------------------------------------------------------->
+
+<hr>
+<h2 id="code-main-title">Main concepts:</h2>
+<section id="lang-main-concepts" style="line-height: 32px;">
+
+
+<ol>
+
+
+<li><b>Variables</b> Variables store data, such as numbers, text, or other values,
+     that you can use and change in your program. In JavaScript,
+      you create variables using <code>let</code>, <code>const</code>, or <code>var</code>.</li>
+
+<div>
+
+
+<b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+<br>
+
+<div class="code-container">
+<span class="code-label">javascript</span>
+<pre><code>
+    let name = "John";  // This is a string variable<br>
+let age = 25;       // This is a number variable
+
+</code></pre>
+
+</div>
+
+
+</div>
+
+<br><br>
+<!----------------------------->
+<li><b>Data Types</b> JavaScript has different types of data, like strings (text),
+     numbers, booleans (true/false), arrays (lists of values),
+      and objects (collections of key-value pairs).</li>
+ 
+
+<div>
+
+<b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+<br>
+
+<div class="code-container">
+<span class="code-label">javascript</span>
+<pre><code>
+    let isStudent = true;  // Boolean <br>
+    let message = "Hello!"; // String <br>
+    let score = 90;         // Number
+    
+
+</code></pre>
+</div>
+
+</div>
+
+
+<br><br>
+<!----------------------------->
+<li><b>Functions</b> Functions are blocks of code that perform a specific task.
+     You can define a function once and use it multiple
+      times to keep your code organized and reusable.</li>
+
+<div>
+<b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+<br>
+<div class="code-container">
+<span class="code-label">javascript</span>
+<pre><code>
+    function greet() { <br>
+        alert("Hello, World!");  // Displays a greeting  <br>
+    }  <br>
+    greet();  // Calling the function
+    
+</code></pre>
+</div>
+<br>
+
+</div>
+<!--------------------------------->
+<li><b>Events</b> Events are actions that happen on a webpage, like a mouse click or a key press.
+     JavaScript allows you to listen for these events and respond to them,
+      like changing text when a button is clicked.</li>
+
+<div>
+<b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+<br>
+<div class="code-container">
+<span class="code-label">javascript</span>
+<pre><code>
+
+    document.getElementById("myButton").onclick = function() { <br>
+        alert("Button clicked!");   <br>
+    };
+    
+</code></pre>
+</div>
+<br>
+
+</div>
+
+
+
+
+<!--------------------------------->
+<li><b>Conditionals</b> Conditional statements let you make decisions in your code.
+     You can use <code>if</code>, <code>else</code>, and <code>switch</code> to
+      control what happens based on different conditions.</li>
+
+<div>
+<b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+<br>
+<div class="code-container">
+<span class="code-label">javascript</span>
+<pre><code>
+
+    let age = 20;<br>
+    if (age >= 18) {  <br>
+        alert("You are an adult.");  <br>
+    }  <br>
+     else {  <br>
+        alert("You are a minor.");  <br>
+    }
+    
+   
+</code></pre>
+</div>
+<br>
+
+</div>
+
+<!------------------------->
+
+
+
+</ol>
+
+</section>
+
+
+<!----------------------------------------------------------------------------------------------------------------->
+<hr>
+
+<h2 id="code-main-title">Simple JavaScript Examples</h2>
+<section id="lang-examples"  style="margin-left: 1%;">
+
+<!------------------------------ex1------------------------------->
+<div>
+<p><b>1- Example 1: Storing and Using Data</b><br></p>
+
+<p>&bull;Example:</p>
+<div class="code-container">
+<span class="code-label">javascript</span>
+<pre><code>
+
+    let name = "Alice";  // A variable to store a name  <br>
+const age = 30;      // A constant variable for age   <br>
+let message = "Hello, " + name + "!";  // Using the variable in a string  <br>
+console.log(message);  // Outputs: Hello, Alice!  <br>
+
+</code></pre>
+
+</div>
+
+
+
+
+
+</div>
+
+<!-------------------------------ex2---------------------------------->
+<br><br>
+
+<div>
+
+<p><b>2- Example 2: Working with Different Data Types</b></p>
+ <br><br>
+ <p>&bull; Example:</p>
+ 
+ 
+ <div class="code-container">
+ <span class="code-label">javascript</span>
+
+ <pre><code>
+    let isActive = true;    // Boolean value <br>
+    let score = 85;         // Number <br>
+    let userName = "John";  // String <br>
+    let fruits = ["apple", "banana", "cherry"];  // Array <br>
+    let person = {name: "John", age: 25};  // Object <br>
+    console.log(fruits[0]);  // Outputs: apple <br>
+    console.log(person.name);  // Outputs: John  <br>
+    
+
+</code></pre>
+</div>
+
+</div>
+
+
+<!---------------------------ex3--------------------------------------->
+<br><br>
+<div>
+
+<p><b>3- Example 3: Creating a Greeting Function</b></p>
+<br><br>
+
+<p>&bull; Example:</p>
+
+
+<div class="code-container">
+<span class="code-label">javascript</span>
+<pre><code>
+
+    function greet(name) {  // put  a name in the brackets when using the function   <br>
+        console.log("Hello, " + name + "!");   <br>
+    }  <br>
+    greet("Bob");  // Outputs: Hello, Bob!
+    
+
+</code></pre>
+</div>
+
+
+
+</div>
+
+
+<!---------------------------ex4--------------------------------------->
+<br><br>
+<div>
+
+<p><b>4- Example 4: Responding to User Actions</b></p>
+<br><br>
+
+<p>&bull; Example:</p>
+
+<div class="code-container">
+    <span class="code-label">html</span>
+    <pre><code>
+    
+        &lt;button id="myButton"&gt;Click me!&lt;/button&gt;
+
+    
+    </code></pre>
+    </div>
+
+<div class="code-container">
+<span class="code-label">javascript</span>
+<pre><code>
+
+    // Find the element with the ID "myButton" in the document  <br>
+    // We use <b><code>document</code></b> to access the page’s elements  <br>
+    document.getElementById("myButton").onclick = function() {  <br>
+        // When the button is clicked, show an alert with this message   <br>
+        alert("You clicked the button!");  <br>
+    };
+    
+    
+
+</code></pre>
+</div>
+
+<p>Try it yourself !</p>
+
+<button id="myButton">Click me!</button>
+<script>
+
+    document.getElementById("myButton").onclick = function() {
+        alert("You clicked the button!");
+    };
+    
+    
+        </script>
+
+
+</div>
+
+
+
+<br>
+<hr>
+
+
+<!---------------------------ex5--------------------------------------->
+<br><br>
+<div>
+
+<p><b>5- Example 5: Making Decisions in Code</b></p>
+<br><br>
+
+<p>&bull; Example:</p>
+
+
+<div class="code-container">
+<span class="code-label">html</span>
+<pre><code>
+
+    &lt;input type="number" id="age"&gt;  <br>
+    &lt;button onclick="checkAge()"&gt;Check Age&lt;/button&gt;  
+    
+
+</code></pre>
+</div>
+
+
+<div class="code-container">
+    <span class="code-label">javascript</span>
+    <pre><code>
+        // Function to check age and make a decision  <br>
+        function checkAge() {  <br>
+            // Get the value entered by the user  <br>
+            let age = document.getElementById("age").value;  <br>
+
+            // Check if the age is a valid number  <br>
+            if (age >= 18) {   <br>
+                alert("You are an adult.");  <br>
+            } else if (age > 0) {  <br>
+                alert("You are a minor.");  <br>
+            } else {  <br>
+                alert("Please enter a valid age.");  <br>
+            }  <br>
+        }
+    
+    </code></pre>
+    </div>
+   
+    <p>try it yourself!</p>
+
+    
+    <input type="number" id="age" placeholder="Enter your age">
+    <button onclick="checkAge()">Check Age</button>
+
+    <script>
+        // Function to check age and make a decision
+        function checkAge() {
+            // Get the value entered by the user
+            let age = document.getElementById("age").value;
+
+            // Check if the age is a valid number
+            if (age >= 18) {
+                alert("You are an adult.");
+            } else if (age > 0) {
+                alert("You are a minor.");
+            } else {
+                alert("Please enter a valid age.");
+            }
+        }
+    </script>
+
+</div>
+
+
+<br>
+<hr>
+
+<!--------------------------------------------------------------exercises----------------------------------------------->
+<h2 id="code-main-title">Exercise: Practice Your JavaScript Skills</h2>
+<section id="lang-exercises">
+
+
+<!----------------------->
+
+<div>
+
+    <b>1-</b> Working with Different Data Types .<br>
+    <ul>
+    <li><b>Task:</b> Declare three variables:
+    </li>
+    <br>
+    <ol>
+        <li>A <b>string(Text)</b> variable called <code>name</code> with the value <code>"John"</code>.</li>
+        <br><li>A <b>number</b> variable called <code>age</code> with the value <code>25</code>.</li>
+    <br><li><b>A boolean</b> variable called <code>isStudent</code> with the value <code>true</code>.</li>
+    </ol>
+    <br><li><b>Hint:</b> <button onclick="showHint('hint45')">Show Hint</button>
+        
+        <p id="hint45" class="hint">
+            Hint: Use <code>let</code> and <code>&quot;=&quot;</code> 
+        </p></li>
+    </ul>
+    </div>
+    
+    
+    
+<!------------------------------------------------------------------>
+<div>
+
+<br><b>2-</b> Create a Greeting Message .<br>
+<ul>
+
+<li><b>Task:</b> Write a function that takes a name as an input and 
+    displays a greeting message, like &quot;Hello, [Name]!&quot;</li>
+<br><li> <b>Hint:</b> <button onclick="showHint('hint1')">Show Hint</button>
+    <p id="hint1" class="hint">
+        Hint: 1- use an <code>input</code> text tag with an <code>id</code> attribute.
+       <br><br> 2- use <code>document.getElementById("id")</code> to get the value from user.
+         <br> <br> 3- Use <code>alert()</code> to display
+         the message and <code>+</code> to combine strings.</p></li>
+</ul>
+
+</div>
+<!--------------------------->
+
+<div>
+
+<br><b>3-</b> Age Check .<br>
+<ul>
+
+<li><b>Task:</b> Write a function that asks the 
+    user for their age and displays a message based on their response.</li>
+ 
+<br><li> <b>Hint:</b> <button onclick="showHint('hintAge')">Show Hint</button>
+    <p id="hintAge" class="hint">
+        Hint: Use an <code>input</code> tag with an <code>id</code> attribute.
+        <br><br>Add an button with <code>onclick="function name()"</code>
+         in the HTML part.
+         <br><br>Use <code>document.getElementById("id")</code> , also use<code>if</code> to check if age is
+          18 or older, and <code>else</code> for the other case, Use <code>alert()</code> to display
+          the message.
+          
+    </p></li>
+</ul>
+</div>
+
+
+
+<!----------------------------->
+
+
+
+<div>
+
+<br><b>4-</b>   Add Two Numbers .<br>
+<ul>
+<li><b>Task:</b> Write a function that takes two numbers as input and displays their sum.</li>
+<br><li><b>Hint:</b>  <button onclick="showHint('hintadd')">Show Hint</button>
+
+    <!-- Display hint -->
+    <p id="hintadd" class="hint">
+        Hint: 
+        1. Use <code>document.getElementById("value1").value</code> to get the
+         value of the first input field.<br>
+      <br>  2. Use <code>document.getElementById("value2").value</code> to get the
+         value of the second input field.<br>
+       <br> 3. Convert the values to numbers using <code>parseFloat()</code>, like this:<code>parseFloat(document.getElementById("value1").value)</code><br>
+        <br>4. Add the two numbers and display the result using <code>alert("sum ="+(value1+value2));</code>
+    </p></li>
+</ul>
+</div>
+
+
+
+
+
+<form>
+<h4>**Write your answers here**</h4>
+<br><br>
+<textarea name="html-answer" rows="50" cols="50" placeholder="Write your answer"></textarea>
+ <br>
+ <input type="submit" value="submit answer">
+
+</form>
+
+
+
+
+
+
+
+
+
+<script>
+    // Function to show the hint when the "Show Hint" button is clicked
+    function showHint(hintId) {
+        const hint = document.getElementById(hintId);
+        if (hint.style.display === "none") {
+            hint.style.display = "block";  // Show the hint
+        } else {
+            hint.style.display = "none";   // Hide the hint if clicked again
+        }
+    }
+</script>
+</section>
+
+<div class="Register-now-button">
+    <a href="contact.html"><button>Register now!</button></a>
+    </div>
+<!-------------------------------------FOOTER-------------------------->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4 id="footer-weby">WEBY</h4>
+          
+
+          </div>
+        
+        <div class="footer-section">
+            <h4 id="marr"><u>Quick Links</u></h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses overview.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="resource library.html">Resource library</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4 id="mar"><u>Get in touch</u></h4>
+            <p><a href="mailto:weby.officiall@gmail.com">Email: weby.officiall@gmail.com</a></p>
+            <p id="followus"><b>Follow us:</b></p>
+            
+         <a href="https://www.instagram.com/weby.officiall?igsh=MTJ3eWNtMXZpOTZjaQ=="><i class="fa-brands fa-instagram"></i></a></li>
+            
+        </div>
+
+        <div class="footer-section" id="phone">
+            <h4><a href="tel:+962796067545"><i class="fa-solid fa-phone"></i></a></h4>
+            <p id="phone-num"><a href="tel:+962796067545">0796067545</a></p>
+               
+        </div>
+
+    </div>
+  
+</footer>
+
+
+
+
+
+
+</body>
+</html>

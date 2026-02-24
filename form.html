@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 id="dateandtime"></h1>
+    <form onsubmit="return validate()" id="myForm">
+        First name: <input type="text" id="firstname"> 
+        &nbsp;&nbsp;<span id="valfirst"></span>
+        <br><br>
+Second name: <input type="text" id="secname">
+&nbsp;&nbsp;<span id="valsec"></span>
+
+<br><br>
+Email: <input type="email" id="email">
+&nbsp;&nbsp;<span id="emval"></span>
+        <br><br>
+Interest:
+ <select name="" id="sel">
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="Bootstrap">Bootstrap</option>
+    <option value="JavaScript">JavaScript</option>
+</select>
+&nbsp;&nbsp;<span id="intvalid"></span>
+<br><br>
+<span id="le">
+experience level: <br>
+<input type="radio" name="ex" value="Beginner">Beginner
+<input type="radio" name="ex" value="Intermediate">Intermediate   
+<input type="radio" name="ex" value="Advanced">Advanced
+</span>
+&nbsp;&nbsp;<span id="levelvalid"></span>
+<br><br>
+<span id="pre">
+Learning Preferences: <br>
+<input type="checkbox" name="pref" value="Videos">Videos
+<input type="checkbox" name="pref" value="Articles">Articles
+<input type="checkbox" name="pref" value="Exercises">Exercises
+</span>
+&nbsp;&nbsp;<span id="prefvalidate"></span>
+<br><br>
+Number of Hours You Can Dedicate Weekly: 
+<input type="number" id="hours">
+&nbsp;&nbsp;<span id="hoursval"></span>
+<br><br>
+<input type="submit" value="calculate"><br>
+<p id="cal"></p>
+<textarea name="" id="last" cols="55" rows="17"></textarea>
+<br><br>
+
+</form>
+
+<script>
+    var d=new Date();
+    document.getElementById('dateandtime').innerHTML=d;
+     document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the page from refreshing
+    const name = document.getElementById('name').value;
+    document.getElementById('output').textContent = `Hello, ${name}!`;
+});
+
+        function validate(){
+         var first=document.getElementById("firstname").value;
+    if(first==""){
+        document.getElementById("valfirst").innerHTML="(enter your first name) !";
+        document.getElementById('valfirst').style.color='red';
+        document.getElementById("firstname").style.border = '2px solid red';
+        
+    }
+    else{
+        document.getElementById("valfirst").innerHTML="";
+        document.getElementById("firstname").style.border = '2px solid green';
+        
+    }
+    var sec=document.getElementById("secname").value;
+    
+    if(sec==""){
+        document.getElementById("valsec").innerHTML="(enter your second name) !";
+        document.getElementById('valsec').style.color='red';
+        document.getElementById("secname").style.border = '2px solid red';
+        
+
+    }
+    else{
+        document.getElementById("valsec").innerHTML="";
+        document.getElementById("secname").style.border = '2px solid green';
+        
+    }
+    var email=document.getElementById('email').value;
+    if(email==""){
+document.getElementById('emval').innerHTML="(enter your email) !";
+document.getElementById('emval').style.color='red';   
+document.getElementById("email").style.border = '2px solid red';
+      
+}
+
+    else{
+        document.getElementById("email").style.border = '2px solid green';
+        document.getElementById('emval').innerHTML="";
+
+    }
+    var Interest=document.getElementById('sel');
+    var inttext=Interest.options[Interest.selectedIndex].value;
+  
+var lev=document.getElementsByName("ex");
+var level;
+for(var i=0 ; i<lev.length ;i++){
+    if(lev[i].checked){
+level=lev[i].value;
+    }
+}
+if(level==null){
+    document.getElementById('le').style.color='red';
+ document.getElementById('levelvalid').innerHTML="(select a level) !";
+document.getElementById('levelvalid').style.color='red';
+}
+else{
+    document.getElementById('le').style.color='green';
+    document.getElementById('levelvalid').innerHTML="";
+}
+var Preferences=document.getElementsByName("pref");
+var pref=" ";
+for(var i=0 ; i<Preferences.length;i++){
+    if(Preferences[i].checked){
+        pref=pref+Preferences[i].value+" ";
+    }
+}
+if(pref==" "){
+    document.getElementById('pre').style.color='red';
+document.getElementById('prefvalidate').innerHTML="(choose at least one preference) !";
+document.getElementById('prefvalidate').style.color='red';
+}
+else{
+    document.getElementById('pre').style.color='green';
+    document.getElementById('prefvalidate').innerHTML="";
+
+}
+var hours=document.getElementById("hours").value;
+if(hours<=0 || hours>168){
+    document.getElementById('hoursval').innerHTML="enter a valid num(1-168) !";
+    document.getElementById('hoursval').style.color='red';
+    document.getElementById("hours").style.border = '2px solid red';
+}
+else{
+    document.getElementById("hours").style.border = '2px solid green';
+    document.getElementById('hoursval').innerHTML="";
+    
+}
+var weeks=0;
+if(level=="Beginner" && inttext=="HTML" ){
+    weeks=8.0 / hours;
+}
+else if(level=="Beginner" && inttext=="CSS" ){
+    weeks=9.0 / hours;
+}
+
+else if(level=="Beginner" && inttext=="JavaScript" ){
+    weeks=15.0 / hours;
+}
+
+else if(level=="Beginner"&& inttext=="Bootstrap" ){
+    weeks=10.0 / hours;
+}
+
+else if(level=="Intermediate" && inttext=="HTML" ){
+    weeks=11.0 / hours;
+}
+
+else if(level=="Intermediate" && inttext=="CSS" ){
+    weeks=12.0 / hours;
+}
+
+else if(level=="Intermediate" && inttext=="JavaScript" ){
+    weeks=25.0 / hours;
+}
+
+else if(level=="Intermediate" && inttext=="Bootstrap" ){
+    weeks=15.0 / hours;
+}
+
+else if(level=="Advanced" && inttext=="HTML" ){
+    weeks=16.0 / hours;
+}
+
+else if(level=="Advanced" && inttext=="CSS" ){
+    weeks=18.0 / hours;
+}
+
+else if(level=="Advanced" && inttext=="JavaScript" ){
+    weeks=20.0 / hours;
+}
+
+else{
+    weeks=14.0 / hours;
+}
+
+if(first==""||sec==""||email==""||level==null||pref==" "||hours<=0 || hours>168){
+    document.getElementById("last").value="";
+    document.getElementById('cal').innerHTML="";
+}
+else{
+    document.getElementById("last").value="first name: "+first+"\nsecond name: "+sec+"\nemail: "+email+"\nlevel: "+level+"\nlearning prefrences: "+pref+"\nInterest: "+inttext+"\nhours per week: "+hours;
+document.getElementById('cal').innerHTML="you need "+weeks+" weeks to finish "+inttext+" "+level+" course if you weekly Dedicate for "+hours+" hours.";
+}
+
+
+}
+
+</script>
+
+
+</body>
+</html>

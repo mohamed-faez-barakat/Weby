@@ -1,0 +1,481 @@
+body{
+background-color:  #001f3d;
+color:#ffffff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav ul{
+list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    border: solid;
+    border-radius: 30px;
+    text-decoration: none;    
+
+}
+header nav ul li i{
+border-radius: 50%;
+font-size: 22px;
+color: #ffffff;
+    padding: 0px 25px;
+    margin: 12px;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 22px;
+    width: 22px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li i:hover {
+   
+transform: scale(1.5) ;
+color: #ffffff9c;
+
+
+}
+header button{
+    font-family: 'arial', sans-serif;
+    font-weight: bold;
+    padding:10px 20px;
+font-size: 18px;
+color:#ffffff;
+border:solid;
+border-radius:30px ;
+cursor: pointer;
+transition:all 0.3s ease;
+background-color: transparent;
+}
+    
+header button:hover {
+   
+    transform: scale(1.1) ;
+    background-color:rgba(255, 255, 255, 0.427);
+    
+    }
+
+    header #weby-logo{
+display: inline-block;
+        color:#ffffff;
+        text-decoration: none;    
+        transition:all 0.3s ease ;
+        font-family: 'Trebuchet MS', sans-serif;
+font-size: 150%;    
+}
+
+
+    header #weby-logo:hover{
+        transform: scale(1.1);
+        color: #ffffff9c;
+        
+    }
+    
+
+    .index-welcome h2{
+        font-size: 600%;
+        text-align: center;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+   
+
+  .index-welcome p{
+text-align: center;
+
+}  
+
+.index-welcome #learn{
+    font-size: 150%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgba(255, 255, 255, 0.489);
+}
+.index-welcome #build{
+    font-size: 175%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.68);
+    font-weight: bold;
+}
+.index-welcome #grow{
+    font-size: 250%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.881);
+    font-weight: bolder;
+}
+.index-welcome #btns{
+    
+    text-align: center;
+    margin: 10%;
+    text-decoration: none;
+    justify-content: space-between;
+    justify-items: center;
+   
+
+}
+.index-welcome button{
+    padding:15px 25px;
+    font-size: 20px;
+    color:#001f3d;
+    border:solid 0px;
+    border-radius:30px ;
+    cursor: pointer;
+    transition:all 0.3s ease;
+    background-color: white;
+    margin: 0 20px;
+    padding: 10px;
+    font-family: 'arial', sans-serif;
+    font-weight:bold;
+    width: 20%;
+
+}
+.index-welcome button:hover{
+
+background-color: #ffffff8c;
+transform: scale(1.1);
+
+}
+
+
+#discover{
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.653);
+    font-weight: bolder;
+    margin-top: 25%;
+
+}
+
+
+.index-courses{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 20px;
+    gap: 20px;
+text-decoration: none;
+}
+
+.index-courses h1{
+    text-align: center;
+}
+
+.index-courses-item{
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #001f3d;
+    height: 300px;
+    width: 220px;
+    transition: all 0.3s ease;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+text-decoration: none;
+box-shadow: 0 0 40px rgba(255, 255, 255, 0.751);
+}
+.index-courses-item:hover{
+    transform: scale(1.1);
+    background-color: #ffffffb2;
+}
+.index-courses-item i{
+    
+    border-radius: 10px;
+    height: 200px;
+    object-fit:contain;
+    font-size: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+   
+}
+.index-courses-item figcaption{
+    margin-bottom: 15px;
+    font-family: 'arial', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.index-courses a{
+    text-decoration: none;
+}
+.index-courses-item p{
+    font-size: 17px;
+    font-family: 'arial', sans-serif ;
+    color:#001f3d;
+    margin-top: 15px;
+}
+
+#top-courses{
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.653);
+    font-weight: bolder;
+    margin-top: 25%;
+   }
+
+   #courses-overview{
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.653);
+    font-weight: bolder;    
+   }
+   
+   
+   #courses-overview-table{
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background-color: transparent;
+font-size: 19px;
+
+   }
+
+#courses-overview-table tr{
+border-bottom: 1px solid #ffffff;
+
+
+}
+#courses-overview-table , #courses-overview-table th{
+    padding: 15px;
+    
+}
+
+#details{
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.653);
+    font-weight: bolder;    
+    margin-top: 14%;
+   }
+.index-top-courses{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 8%;
+align-items: center;
+text-align: center;
+justify-content: center;
+font-family: 'arial', sans-serif;
+
+}
+.index-top-courses #index-top-courses-container{
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color:#001f3d;
+    width:250px ;
+    height:325px ;
+    padding: 10px;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+transition: all 0.3s ease;  
+cursor: pointer;  
+box-shadow: 0 0 40px rgba(255, 255, 255, 0.751);
+}
+.index-top-courses #index-top-courses-container:hover{
+    background-color: #ffffffc3;
+    transform: scale(1.1);
+}
+
+.index-top-courses #index-top-courses-container ul{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+ text-align: center;
+}
+
+.index-top-courses #lang-i{
+   font-size: 40px;
+ 
+}
+.index-top-courses a{
+    text-decoration: none;
+}
+.index-top-courses li{
+    margin-top: 7%;
+}
+#success-stories{
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.653);
+    font-weight: bolder;
+    margin-top: 25%;
+
+}
+
+
+.index-success-stories{
+    margin-top: 0%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'arial', sans-serif;
+    align-items: center;
+
+}
+
+.index-success-stories #index-success-story{
+    margin-top: 8%;
+}
+#strt-jrny{
+    width:150px;
+}
+#strt-ur-jr{
+    margin-top: 4%;
+}
+.index-success-stories #index-success-story img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 4px 4px 9px black;
+}
+#success-stories-btn{
+    border: none;
+    border-radius: 30px;
+    background-color: dodgerblue;
+    color: #ffffff;
+    font-size: 15px;
+height: 8%;
+width: 16%;
+transition: all 0.3s ease;
+cursor: pointer;
+text-align: center;
+padding: 10px;
+font-weight: bold;
+}
+
+#success-stories-btn:hover{
+    background-color: #ffffff94;
+    transform: scale(1.1);
+}
+#strt-ur-jr{
+    font-family: 'Trebuchet MS', sans-serif; 
+    text-align: center;
+    justify-content: center;
+    font-size: 150%;
+    color: #ffffffae;
+}
+
+#strt-jrny{
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #ffffffae;
+    color: #001f3d;
+    transition: all 0.3s ease;
+}
+#strt-jrny:hover{
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+footer{
+    height: 15%;
+    width: 100%;
+    margin-top: 16%;
+    border:none;
+    border-radius: 30px;
+    background-color: hsl(210, 100%, 6%);
+    
+}
+.footer-content{
+    
+    display:flex;
+    gap: 15%;
+    justify-content: center;
+    padding: 10px 0;
+    text-align: center;
+    font-family:'arial',sans-serif ;
+}
+.footer-content a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-content ul{
+list-style: none;
+margin: 0;
+padding: 0;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.footer-content ul li{
+    margin-top: 2%;
+   
+}
+#footer-weby{
+    margin-top: 35%;
+    font-size: 450%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #ffffff86;
+}
+
+.footer-content a i{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+}
+#mar{
+    margin-top: 24%;
+}
+#marr{
+    margin-top: 42% ;
+}
+.footer-content li{
+    transition: all 0.3s ease;
+  
+}
+.footer-content li:hover{
+    transform: translatex(-10px);
+}
+.footer-content i{
+    transition: all 0.3s ease;
+  
+}
+.footer-content i:hover{
+    transform:scale(1.2);
+}
+#followus{
+    margin-top: 10%;
+}
+#phone{
+    font-size: 25px ;
+   flex-direction: row;
+   -ms-flex-item-align: center;
+   align-self: center;
+   align-items: center;
+}
+#phone-num{
+    font-size:20px ;
+    transition: all 0.3s ease;
+}
+#phone-num:hover{
+    
+transform: scale(1.1);
+
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML</title>
+<link rel="stylesheet" href="codesstyle.css">
+</head>
+<body>
+    
+    <!--------------------HEADER SEC------------------------>
+<header>
+    <h1><a href="index.html"  id="weby-logo">Weby</a></h1>
+      <nav>
+      <ul>
+          <li><a href="html.html"><i class="fa-brands fa-html5"></i></a></li>
+          <li><a href="css.html"><i class="fa-brands fa-css3-alt"></i></a></li>
+          <li><a href="JS.html"><i class="fa-brands fa-js"></i></a></li>
+          <li><a href="bootstrap.html"><i class="fa-brands fa-bootstrap"></i></a></li>
+          <li class="nav-item"><a href="form.html"><i class="fa-regular fa-clipboard"></i></a></li>
+        </ul>
+    </nav>
+    
+    <a href="contact.html"><button name="contact us" value="contact us">contact us</button></a>
+    
+    </header>
+    
+    
+    
+    <!------------INTRO SEC ------------------------------------->
+<h1 style=" text-align: center;
+font-size:700%;
+font-family: 'Trebuchet MS', sans-serif;
+color:rgba(255, 255, 255, 0.653);
+font-weight: bolder;
+margin-top: 15%;"><i class="fa-brands fa-html5"></i></h1>
+
+    <h1 id="code-getting-started">Getting started with HTML</h1>
+
+
+<h2 id="code-main-title">Introduction to HTML</h2>
+
+<section id="intro-to-lang">
+
+
+<p style="line-height: 32px; margin-left: 1%;">
+    &bull; &nbsp;<b>What is HTML?</b> HTML (HyperText Markup Language) is the foundation of web development.
+ It is the standard language used to create and structure content on the web.
+ HTML defines the structure of web pages using a system of tags that describe elements such as text, images, links, and multimedia.
+ Understanding HTML is the first step toward building websites and applications.
+</p>
+</section>
+
+<!---------------------------------------------------------------------------------------->
+
+<h2 id="code-main-title">Why is HTML Important?</h2>
+<section id="lang-why-is-imp">
+
+<ul style="line-height: 37px;">
+<li><b>Structure:</b> HTML structures the content you see on a webpage (e.g., headings, paragraphs, images).</li>
+<li><b>Interactivity:</b> It forms the base for adding interactive features when combined with CSS and JavaScript.</li>
+<li><b>Accessibility:</b> A properly structured HTML document ensures that web content is accessible and readable by all users, including those with disabilities.</li>
+</ul>
+<h2 id= "code-main-title" style="margin-left: 2%; margin-top: 8%;"> Why you should learn HTML</h2>
+	  <video height="100%" width = "70%" style="margin-left: 12.5%;  margin-bottom: 2%; margin-top: 2%; border-radius: 3%; border: none;" controls>
+	  <source src="html.mp4" type="video/mp4">
+   <p> Browser does not support videos</p>
+</section>
+<!--------------------------------------------------------------------------------------------------------------->
+<hr>
+<h2 id="code-main-title">Main concepts:</h2>
+<section id="lang-main-concepts">
+
+
+<ol style="line-height: 32px;">
+
+
+<li><b>HTML Tags</b> HTML tags are the fundamental building blocks of the language.
+ Tags are enclosed in angle brackets (<code>&lt;&nbsp;&gt;</code>) and come in pairs, where the first tag is the opening tag and the second tag is the closing tag.
+ The closing tag has a forward slash before the tag name (e.g., <code>&lt;/p&gt;</code>).</li>
+
+<div>
+
+
+<b>&bull;&nbsp;&nbsp;&nbsp;Example of a simple tag:</b>
+<br>
+
+<div class="code-container">
+<span class="code-label">html</span>
+<pre><code>&lt;h1&gt;Welcome to Weby!&lt;/h1&gt;</code></pre>
+
+</div>
+
+
+</div>
+
+<br><br>
+
+<li><b>HTML Elements</b> An HTML element is a combination of an opening tag, content, and a closing tag.
+ Elements tell the browser what type of content
+ they contain (such as text, an image, or a link) and how it should be displayed.</li>
+ 
+
+<div>
+
+<b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+<br>
+
+<div class="code-container">
+<span class="code-label">html</span>
+<pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+</div>
+
+</div>
+
+<p>The <code>&lt;p&gt;</code> tag defines a paragraph, and everything between
+ the opening <code>&lt;p&gt;</code> and closing <code>&lt;/p&gt;</code> is considered part of that element.</p>
+
+
+<br><br>
+
+<li><b>HTML Attributes</b> Attributes provide additional information about an element.
+ They are always written in the opening tag and provide further details such as the style,
+ source, or behavior of an element. Common attributes include <code>class</code>, <code>id</code>, <code>src</code>, and <code>href</code>.</li>
+
+<div>
+<b>&bull;&nbsp;&nbsp;&nbsp;Example of an image element with attributes:</b>
+<br>
+<div class="code-container">
+<span class="code-label">html</span>
+<pre><code>
+&lt;img src="image.jpg" alt="A description of the image" width="300" height="200"&gt;
+</code></pre>
+</div>
+<br>
+<ul type="disc">
+<li><code>src</code>: Defines the image source (file path or URL).</li><br>
+<li><code>alt</code>: Provides alternative text that describes the image.</li><br>
+<li><code>width</code> and <code>height</code>: Control the size of the image.</li>
+</ul>
+</div>
+
+
+</ol>
+
+</section>
+
+<!----------------------------------------------------------------------------------------------------------------->
+<hr>
+
+<h2 id="code-main-title">Simple HTML Examples</h2>
+<section id="lang-examples" >
+
+<!------------------------------ex1------------------------------->
+<div>
+<p style="margin-left: 1%;"><b>1- Example 1: Basic Page Structure</b>A simple HTML page is made up of the following structure:<br></p>
+<ul>
+<li>The <code>&lt;!DOCTYPE html&gt;</code> declaration specifies the document type (HTML5).</li><br>
+<li>The <code>&lt;html&gt;</code> tag is the root element of the page.</li><br>
+<li>The <code>&lt;head&gt;</code> section includes metadata such as the title and character encoding.</li><br>
+<li>The <code>&lt;body&gt;</code> section contains the actual content displayed on the page.</li><br>
+</ul>
+<p>&bull;Example:</p>
+<div class="code-container">
+<span class="code-label">html</span>
+<pre><code>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+&lt;head&gt;<br>
+    &lt;meta charset="UTF-8"&gt;<br>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+    &lt;title&gt;My First HTML Page&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+    &lt;h1&gt;Welcome to Weby&lt;/h1&gt;<br>
+    &lt;p&gt;This is a simple HTML page demonstrating the structure of a website.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+</code>
+</pre>
+
+</div>
+
+
+
+
+
+</div>
+
+<!-------------------------------ex2---------------------------------->
+<br><br>
+
+<div>
+
+<p style="margin-left: 1%;"><b>2- Example 2: Adding Links</b> Hyperlinks allow users to navigate between pages or to external websites. To create a link,
+ we use the <code>&lt;a&gt;</code> tag and the <code>href</code> attribute, which specifies the destination URL.</p>
+ <br><br>
+ <p>&bull; Example:</p>
+ 
+ 
+ <div class="code-container">
+ <span class="code-label">html</span>
+ <pre><code>&lt;a href="https://www.google.com"&gt;open google&lt;/a&gt;</code></pre>
+</div>
+
+
+
+<p>&bull;<code>href</code>: The link destination.</p>
+
+
+
+
+
+</div>
+
+
+<!---------------------------ex3--------------------------------------->
+<br><br>
+<div>
+
+<p style="margin-left: 1%;"><b>3- Example 3: Adding Images</b> Images are inserted using the <code>&lt;img&gt;</code> tag. This tag is self-closing,
+ meaning it doesn’t require a closing tag. It usually contains two 
+ essential attributes: <code>src</code> (source) and <code>alt</code> (alternative text).</p>
+<br><br>
+
+<p>&bull; Example:</p>
+
+
+<div class="code-container">
+<span class="code-label">html</span>
+<pre><code>&lt;img src="logo.png" alt="Weby Logo"&gt;</code></pre>
+</div>
+
+
+
+</div>
+
+
+
+
+
+<br>
+<hr>
+
+<!--------------------------------------------------------------exercises----------------------------------------------->
+<h2 id="code-main-title">Exercise: Practice Your HTML Skills</h2>
+<section id="lang-exercises">
+
+
+<div style="margin-left: 1%;">
+
+<b>1-</b> Create a Heading .<br>
+<ul>
+
+<li><b>Task:</b> Create a webpage with an <code>&lt;h1&gt;</code> tag that says &quot;Welcome to My Website.&quot;</li>
+<br><li><b>Hint:</b> Use this tag: <code>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;</code>.</li>
+</ul>
+</div>
+
+
+<div style="margin-left: 1%;">
+
+<b>2-</b> Add a Paragraph .<br>
+<ul>
+
+<li><b>Task:</b> Below the heading, add a paragraph that introduces your website. For example,
+ &quot;This website provides a variety of web development resources.&quot;</li>
+ 
+<br><li><b>Hint:</b> Use the <code>&lt;p&gt;</code> tag to write your content.</li>
+</ul>
+</div>
+
+
+
+
+
+
+<div style="margin-left: 1%;">
+
+<b>3-</b> Add an Image .<br>
+<ul>
+<li><b>Task:</b> Add an image to your webpage. Use the <code>&lt;img&gt;</code> tag, and set the src attribute to the path of an image on your computer or a URL.</li>
+<br><li><b>Hint:</b> Example: <div class="code-container">
+<span class="code-label">html</span>
+<pre><code>&lt;img src="yourimage.jpg" alt="A description of your image"&gt;</code><pre></div></li>
+</ul>
+</div>
+
+
+
+
+<div style="margin-left: 1%;">
+
+<b>4-</b>  Create a Hyperlink .<br>
+<ul>
+<li><b>Task:</b> Add a link to an external website.</li>
+<br><li><b>Hint:</b>Use the <code>&lt;a&gt;</code> tag with the <code>href</code> attribute.</li>
+</ul>
+</div>
+
+
+
+
+
+<form>
+<h4>**Write your answer here**</h4>
+<br><br>
+<textarea name="html-answer" rows="50" cols="50" placeholder="Write your answer"></textarea>
+ <br>
+ <input type="submit" value="submit answer">
+
+</form>
+
+
+
+
+</section>
+<div class="Register-now-button">
+<a href="contact.html"><button>Register now!</button></a>
+</div>
+<!-------------------------------------FOOTER-------------------------->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4 id="footer-weby">WEBY</h4>
+          
+
+          </div>
+        
+        <div class="footer-section">
+            <h4 id="marr"><u>Quick Links</u></h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses overview.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="resource library.html">Resource library</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4 id="mar"><u>Get in touch</u></h4>
+            <p><a href="mailto:weby.officiall@gmail.com">Email: weby.officiall@gmail.com</a></p>
+            <p id="followus"><b>Follow us:</b></p>
+            
+         <a href="https://www.instagram.com/weby.officiall?igsh=MTJ3eWNtMXZpOTZjaQ=="><i class="fa-brands fa-instagram"></i></a></li>
+            
+        </div>
+
+        <div class="footer-section" id="phone">
+            <h4><a href="tel:+962796067545"><i class="fa-solid fa-phone"></i></a></h4>
+            <p id="phone-num"><a href="tel:+962796067545">0796067545</a></p>
+               
+        </div>
+
+    </div>
+  
+</footer>
+
+
+</body>
+</html>

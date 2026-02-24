@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #001f3d;
+      font-family: Arial, sans-serif;
+    }
+    .accordion-button {
+      background-color: #00274d; /* Navy blue */
+      color: white;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #0056b3; /* Baby blue */
+      color: white;
+    }
+    .accordion-body {
+      background-color: #f8f9fa; /* Light gray for contrast */
+      color: #00274d; /* Navy blue text */
+    }
+    .accordion-item {
+      border: 1px solid #0056b3; /* Baby blue border */
+    }
+    #customModal .modal-content {
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #customModal .modal-header {
+            background-color: #5c6bc0;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        #customModal .modal-footer {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #customModal .btn-close {
+            background-color: #3f4b88;
+            color: white;
+            border-radius: 50%;
+        }
+
+        #customModal .modal-body {
+            font-size: 1.1rem;
+            color: #333;
+        }
+         #customCard {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #customCard:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #customCard .card-img-top {
+            border-radius: 10px 10px 0 0;
+            border: none;
+            height: 200px;
+            object-fit:cover;
+        }
+
+        #customCard .card-body {
+            padding: 10px;
+        }
+
+        #customCard .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        #customCard .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        #customCard .btn-custom {
+            background-color: #5c6bc0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        #customCard .btn-custom:hover {
+            background-color: #3f4b88;
+        }
+         .navbar {
+            background-color: #343a40;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+            color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 1rem;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+        }
+
+        .navbar-nav .nav-item.active .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+        
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 50px auto;
+        }
+        .card-header {
+            background-color: #5c6bc0;
+            color:  #001f3d;
+            border-radius: 10px 10px 0 0;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+        .form-control {
+            border-radius: 25px;
+            transition: border-color 0.3s ease;
+        }
+        .form-control:focus {
+            border-color: #5c6bc0;
+            box-shadow: 0 0 5px rgba(92, 107, 192, 0.5);
+        }
+        .btn {
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-size: 1rem;
+            width: 100%;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #3f4b88;
+        }
+        .form-check-label {
+            font-size: 0.9rem;
+        }
+        .form-check-input {
+            transform: scale(1.2);
+        }
+        .form-check {
+            margin-bottom: 20px;
+        }
+        #submitt{
+            transition: all 0.3s ease;
+        }
+        #submitt:hover{
+            transform: scale(1.05);
+        }
+       
+ 
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="codesstyle.css">
+
+</head>
+<body>
+    <!--------------------HEADER SEC------------------------>
+<header>
+    <h1><a href="index.html"  id="weby-logo" >Weby</a></h1>
+      <nav>
+      <ul>
+          <li><a href="html.html"><i class="fa-brands fa-html5"></i></a></li>
+          <li><a href="css.html"><i class="fa-brands fa-css3-alt"></i></a></li>
+          <li><a href="JS.html"><i class="fa-brands fa-js"></i></a></li>
+          <li><a href="bootstrap.html"><i class="fa-brands fa-bootstrap"></i></a></li>
+          <li class="nav-item"><a href="form.html"><i class="fa-regular fa-clipboard"></i></a></li>
+        </ul>
+    </nav>
+    
+    <a href="contact.html"><button name="contact us" value="contact us">contact us</button></a>
+    
+    </header>
+    
+    <!------------INTRO SEC ------------------------------------->
+    <h1 style=" text-align: center;
+font-size:700%;
+font-family: 'Trebuchet MS', sans-serif;
+color:rgba(255, 255, 255, 0.653);
+font-weight: bolder;
+margin-top: 15%;"><i class="fa-brands fa-bootstrap"></i></h1>
+<h1 id="code-getting-started">Bootstrap</h1>
+
+  <div class="container my-5" style="background-color:#001f3d;">
+    <div class="accordion" id="webyAccordion">
+      <div class="accordion-item" style="background-color:#001f3d;">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h2 id="code-main-title" style="color: #001f3d;">Introduction to Bootstrap</h2>  
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#webyAccordion">
+          <div class="accordion-body">
+            <section id="intro-to-lang" style="margin-left: 1%;">
+       
+              <div>
+                 <p style="line-height: 32px; margin-left: 1%;"> &bull; &nbsp;<b>What is Bootstrap ?</b> Bootstrap is a popular front-end framework that
+                   simplifies web development by providing pre-designed components and responsive layouts.
+                    Originally developed by Twitter, Bootstrap helps
+                     developers quickly build mobile-friendly and visually appealing websites.
+                      By combining HTML, CSS, and JavaScript, Bootstrap offers 
+                      a variety of ready-made elements such as navigation bars,
+                       grids, buttons, and modals. This framework saves time by
+                        reducing the need to write complex CSS or JavaScript
+                         from scratch, making it a favorite tool for both
+                          beginners and professionals.
+                      </p>
+              </div>
+              </section>
+      
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h2 id="code-main-title" style="color: #001f3d;">Why is Bootstrap Important?</h2>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#webyAccordion">
+          <div class="accordion-body">
+            <section id="lang-why-is-imp">
+          
+              <ul style="line-height: 37px;">
+              <li><b>Saves Time:</b>  Bootstrap provides ready-made parts like buttons,
+                   forms, and layouts, so you don’t need to design everything from scratch.</li>
+              <li><b>Responsive Design:</b> Websites built with Bootstrap automatically
+                   adjust to look good on any device – from phones to computers.</li>
+              <li><b>Consistent Look:</b> Using Bootstrap keeps your website
+                   design clean and professional-looking, with consistent styles across all pages.</li>
+              <li><b>Easy to Customize:</b> You can quickly change colors, sizes,
+                   and styles to match your website’s look and feel. </li>
+             
+          </ul>
+      </section>
+  
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h2 id="code-main-title" style="margin-left: 2%; margin-top: 8%; color: #001f3d;" >Why you should learn Bootstrap?</h2>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#webyAccordion">
+          <div class="accordion-body">
+            <video height="100%" width = "70%"  style="margin-left: 12.5%; border-radius: 2%; border: none;"controls>
+              <source src="bootstrap.mp4" type="video/mp4">
+             <p> Browser does not support videos</p>
+             </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!--------------------------------------------------------------------------------------------------------------->
+<hr>
+
+<h2 id="code-main-title">Main concepts:</h2>
+<section id="lang-main-concepts" style="margin-left: 1%;">
+
+   
+    <ol style="line-height: 32px;">
+    
+    
+    <li><b>Grid System:</b> A flexible layout system that helps you arrange content in rows and columns,
+         making it easy to create responsive layouts.</li>
+    
+    <div>
+    
+    
+    <b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+    <br><br>
+    
+    <div class="row">
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 1 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 2 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 3 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 4 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 5 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 6 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 7 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 8 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 9 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 10 </div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 11</div>
+         <div class="col-6 col-sm-4 col-md-3 col-lg-2" style="color: #ffffff;" >item 12 </div>
+           
+    </div>
+
+<style>
+    .col-md-4:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+    
+    
+    </div>
+    
+    <br><br>
+    <!---------------------------------------------->
+    <li><b>Buttons:</b> Pre-styled buttons in different colors and sizes that you can use for links,
+         actions, and forms.</li>
+     
+    
+    <div>
+    
+    <b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+    <br><br>
+    <h3>Bootstrap Button Examples</h3>
+<p>Here are some examples of Bootstrap buttons:</p>
+<div id="bu" style="text-align: center; justify-content: center; align-items: center;">
+<button type="button" class="btn btn-primary" style="margin-bottom: 1px; width: 150px;">Primary Button</button>
+<br>
+<button type="button" class="btn btn-warning" style="margin-bottom: 1px; width: 200px;">Warning Button</button>
+<br>
+<button type="button" class="btn btn-success" style="margin-bottom: 1px; width: 250px;">Success Button</button>
+<br>
+<button type="button" class="btn btn-danger" style="margin-bottom: 1px; width: 300px;">Danger Button</button>
+<br>
+<button type="button" class="btn btn-info" style="margin-bottom: 1px; width: 350px;">Info Button</button>
+</div>
+    
+    </div>
+    
+    
+    <br><br><br>
+    <!---------------------------------------------->
+    <li><b>Navbar:</b> A customizable navigation bar that’s perfect for adding menus to the top
+         of your website.</li>
+    
+    <div>
+    <b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+    <br><br>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color:white;">Weby</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </div>
+    
+    <!------------------------------>
+<br><br><br>
+    <li><b>Cards:</b> A versatile component for displaying content in a clean, organized way,
+         like for articles, profiles, or product displays.</li>
+    
+    <div>
+    <b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+    <br>
+    <div id="customCard" class="card" style="width: 18rem;">
+        <img src="card.jpg" class="card-img-top" alt="Card Image" width="100%">
+        <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">This is a simple example of a Bootstrap card. It contains an image, a title, a short description, and a button. You can customize this card to fit your content.</p>
+            <a href="#" class="btn btn-custom">Learn More</a>
+        </div>
+    </div>
+    
+    </div>
+    
+<!------------------------------>
+
+<br><br><li><b>Forms:</b> Pre-designed forms that help you add text fields, checkboxes,
+     and other form elements with consistent styling.</li>
+
+<div>
+<b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+<br>
+<div class="card">
+    <div class="card-header text-center">
+        <strong style="color:#001f3d;">Register Now</strong>
+    </div>
+    <div class="card-body">
+        <form>
+            <!-- Full Name -->
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+            </div>
+
+            <!-- Agree to Terms -->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="termsCheck">
+                <label class="form-check-label" for="termsCheck" style="color:dodgerblue;">
+                    I agree to the terms and conditions
+                </label>
+            </div>
+<br>
+            <!-- Submit Button -->
+            <button type="submit" class="btn" id="submitt" style="background-color: #001f3d ; color:#ffffff;">Register</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</div>
+<!------------------------------>
+
+<li><b>Modals:</b> Pop-up windows that appear over the page to show messages or additional
+     content without leaving the current page.</li>
+
+<div>
+    <br>
+<b>&bull;&nbsp;&nbsp;&nbsp;Example:</b>
+<br><br>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#customModal" style="background-color: dodgerblue;">
+    Open Modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="customModalLabel">Hey</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Weby loves you ❤️ !
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+    </ol>
+    
+    </section>
+
+
+    <div class="Register-now-button">
+       <a href="contact.html"> <button style=" font-size: 150%;
+        padding-bottom:1%;
+        padding-top: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.751);
+    border-radius: 10px;
+    border: none;
+    font-family: arial,sans-serif;
+    font-weight: bold;">Register now!</button></a>
+        </div>
+<!-------------------------------------FOOTER-------------------------->
+<footer style="font-family: arial,sans-serif; line-height: 20px; font-size: 15px;">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4 id="footer-weby">WEBY</h4>
+          
+
+          </div>
+        
+        <div class="footer-section" >
+            <h4 id="marr"><u style="font-size: 16px;">Quick Links</u></h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses overview.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="resource library.html">Resource library</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section" >
+            <h4 id="mar"><u style="font-size: 16px;">Get in touch</u></h4>
+            <p><a href="mailto:weby.officiall@gmail.com">Email: weby.officiall@gmail.com</a></p>
+            <p id="followus"><b>Follow us:</b></p>
+            
+         <a href="https://www.instagram.com/weby.officiall?igsh=MTJ3eWNtMXZpOTZjaQ=="><i class="fa-brands fa-instagram"></i></a></li>
+            
+        </div>
+
+        <div class="footer-section" id="phone" style="margin-top: 67px;">
+            <h4><a href="tel:+962796067545"><i class="fa-solid fa-phone"></i></a></h4>
+            <p id="phone-num"><a href="tel:+962796067545">0796067545</a></p>
+               
+        </div>
+
+    </div>
+  
+</footer>
+
+
+
+
+
+</body>
+</html>

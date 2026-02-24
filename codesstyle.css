@@ -1,0 +1,168 @@
+
+.code-container {
+	 position: relative; 
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 100%;  
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;    
+    white-space: pre-wrap;    
+    overflow-wrap: break-word; 
+}
+
+pre {
+    background-color: #001f3d;
+    color: #333;
+    padding: 15px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    line-height: 1.6;
+    word-wrap: break-word;   
+    white-space: pre-wrap;    
+    overflow-x: auto; 
+}
+
+code {
+    display: block;
+}
+
+
+code {
+    background-color: #ffffff75;
+    padding: 1px 3px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    border: 0px solid #ddd;
+    margin: 10px 0;
+    display: inline;  
+    white-space: nowrap; 
+}
+
+.code-label {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  background-color: transparent; 
+  color:#ffffff; 
+  font-size: 0.9em;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  text-transform: none; 
+}
+
+#code-getting-started{
+    text-align: center;
+    font-size: 500%;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.653);
+    font-weight: bolder;
+    margin-top: 15%;
+}
+#code-main-title{
+    font-family: arial , sans-serif;
+    font-size: 300%;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.653);
+    margin-top: 9% ;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+#intro-to-lang , #lang-why-is-imp , #lang-main-concepts , #lang-examples , #lang-exercises 
+ {
+    font-size: 16px;
+    font-family: arial,sans-serif;
+    
+  
+}
+#intro-to-lang button, #lang-why-is-imp button  {
+  
+    border-radius: 10px;
+    border: none;
+    height: 33px;
+    background-color: white;
+color: #001f3d;
+font-weight: bold;
+transition: all 0.3s ease;
+cursor: pointer;
+
+}
+#lang-exercises button{
+    
+    border-radius: 10px;
+    border: none;
+    height: 22px;
+    background-color: white;
+color: #001f3d;
+font-weight: bold;
+transition: all 0.3s ease;
+cursor: pointer;
+
+}
+#lang-exercises button:hover{
+    
+ background-color: #ffffff92;
+
+}
+#lang-exercises input{
+    
+    border-radius: 10px;
+    border: none;
+    height: 22px;
+    background-color: white;
+color: #001f3d;
+font-weight: bold;
+transition: all 0.3s ease;
+cursor: pointer;
+
+}
+
+#intro-to-lang button:hover, #lang-why-is-imp button:hover, #lang-main-concepts button:hover, #lang-examples button:hover, #lang-exercises button:hover 
+{
+    background-color: #ffffff9f;
+
+}
+
+textarea{
+    border: white;
+    border-style: solid;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+.Register-now-button{
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+    padding: 30px;
+border-radius: 30%;
+}
+
+
+.Register-now-button button{
+    font-size: 150%;
+    padding-bottom:3%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.751);
+border-radius: 10px;
+cursor: pointer;
+transition: all 0.3s ease;
+
+}
+.Register-now-button button:hover{
+ background-color: rgba(255, 255, 255, 0.6);
+}
